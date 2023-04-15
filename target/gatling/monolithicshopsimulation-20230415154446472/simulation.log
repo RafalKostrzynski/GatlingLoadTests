@@ -1,6 +1,0 @@
-RUN	MonolithicShopSimulation	monolithicshopsimulation	1681573486472	 	3.9.3
-USER	Authentication	START	1681573487189
-REQUEST		Authenticate	1681573487212	1681573487820	OK	 
-ERROR	Calculate order details: Failed to build request: No attribute named 'courier' is defined 	1681573487849
-ERROR	Place order: Failed to build request: No attribute named 'order' is defined 	1681573487855
-USER	Authentication	END	1681573487858

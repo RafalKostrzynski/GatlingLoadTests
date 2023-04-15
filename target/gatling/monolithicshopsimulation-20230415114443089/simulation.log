@@ -1,4 +1,0 @@
-RUN	MonolithicShopSimulation	monolithicshopsimulation	1681559083089	 	3.9.3
-USER	BasicSimulation	START	1681559083844
-REQUEST		authenticate	1681559083830	1681559084459	OK	 
-USER	BasicSimulation	END	1681559084473

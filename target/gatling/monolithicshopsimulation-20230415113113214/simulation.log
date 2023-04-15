@@ -1,4 +1,0 @@
-RUN	MonolithicShopSimulation	monolithicshopsimulation	1681558273214	 	3.9.3
-USER	BasicSimulation	START	1681558273999
-REQUEST		request_1	1681558273985	1681558274028	KO	status.find.is(200), but actually found 403
-USER	BasicSimulation	END	1681558274041

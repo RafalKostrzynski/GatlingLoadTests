@@ -1,5 +1,0 @@
-RUN	MonolithicShopSimulation	monolithicshopsimulation	1681561073584	 	3.9.3
-USER	Authentication	START	1681561074351
-REQUEST		authenticate	1681561074337	1681561114236	OK	 
-REQUEST		test	1681561114255	1681561174260	KO	Request timeout to localhost/127.0.0.1:8080 after 60000 ms
-USER	Authentication	END	1681561174267

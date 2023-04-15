@@ -1,6 +1,0 @@
-RUN	MonolithicShopSimulation	monolithicshopsimulation	1681574797211	 	3.9.3
-USER	Authentication	START	1681574797944
-REQUEST		Authenticate	1681574797965	1681574800840	OK	 
-REQUEST		Calculate order details	1681574800858	1681574800924	OK	 
-REQUEST		Place order	1681574800924	1681574800943	KO	bodyString.find.greaterThan(1), 1 is not greater than 1
-USER	Authentication	END	1681574800946

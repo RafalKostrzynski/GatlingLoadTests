@@ -1,6 +1,0 @@
-RUN	MonolithicShopSimulation	monolithicshopsimulation	1681573410010	 	3.9.3
-USER	Authentication	START	1681573410743
-REQUEST		Authenticate	1681573410769	1681573410784	KO	j.n.ConnectException: Connection refused: no further information
-ERROR	Calculate order details: Failed to build request: No attribute named 'token' is defined 	1681573410792
-ERROR	Place order: Failed to build request: No attribute named 'token' is defined 	1681573410800
-USER	Authentication	END	1681573410802

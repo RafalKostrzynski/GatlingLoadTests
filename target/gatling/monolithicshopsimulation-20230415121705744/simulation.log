@@ -1,5 +1,0 @@
-RUN	MonolithicShopSimulation	monolithicshopsimulation	1681561025744	 	3.9.3
-USER	Authentication	START	1681561026480
-REQUEST		authenticate	1681561026466	1681561026602	OK	 
-REQUEST		test	1681561026622	1681561026634	KO	status.find.is(200), but actually found 403
-USER	Authentication	END	1681561026638
