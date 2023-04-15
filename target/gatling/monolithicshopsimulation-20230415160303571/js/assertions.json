@@ -1,0 +1,10 @@
+{
+  "simulation": "MonolithicShopSimulation",
+  "simulationId": "monolithicshopsimulation-20230415160303571",
+  "start": 1681574584351,
+  "description": "",
+  "scenarios": ["Authentication"],
+  "assertions": [
+
+  ]
+}

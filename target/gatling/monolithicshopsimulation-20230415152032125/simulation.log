@@ -1,0 +1,6 @@
+RUN	MonolithicShopSimulation	monolithicshopsimulation	1681572032125	 	3.9.3
+USER	Authentication	START	1681572032917
+ERROR	Authenticate: Failed to build request: No attribute named 'user' is defined 	1681572032932
+ERROR	Calculate order details: Failed to build request: No attribute named 'token' is defined 	1681572032949
+ERROR	Place order: Failed to build request: No attribute named 'token' is defined 	1681572032950
+USER	Authentication	END	1681572032955

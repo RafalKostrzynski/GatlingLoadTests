@@ -1,0 +1,6 @@
+RUN	MonolithicShopSimulation	monolithicshopsimulation	1681574707365	 	3.9.3
+USER	Authentication	START	1681574708106
+REQUEST		Authenticate	1681574708142	1681574767454	KO	status.find.is(200), but actually found 403
+REQUEST		Calculate order details	1681574767473	1681574767481	KO	status.find.is(200), but actually found 403
+REQUEST		Place order	1681574767482	1681574767487	KO	status.find.is(200), but actually found 403
+USER	Authentication	END	1681574767490

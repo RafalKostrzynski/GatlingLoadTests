@@ -1,0 +1,10 @@
+{
+  "simulation": "ShopSimulation",
+  "simulationId": "shopsimulation-20230415162032132",
+  "start": 1681575632883,
+  "description": "",
+  "scenarios": ["Authentication"],
+  "assertions": [
+
+  ]
+}

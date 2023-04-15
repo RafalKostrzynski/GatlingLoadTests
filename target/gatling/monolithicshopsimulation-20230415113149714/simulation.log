@@ -1,0 +1,4 @@
+RUN	MonolithicShopSimulation	monolithicshopsimulation	1681558309714	 	3.9.3
+USER	BasicSimulation	START	1681558310481
+REQUEST		request_1	1681558310466	1681558370470	KO	Request timeout to localhost/127.0.0.1:8080 after 60000 ms
+USER	BasicSimulation	END	1681558370482

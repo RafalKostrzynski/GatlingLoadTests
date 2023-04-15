@@ -1,0 +1,6 @@
+RUN	MonolithicShopSimulation	monolithicshopsimulation	1681574375849	 	3.9.3
+USER	Authentication	START	1681574376541
+REQUEST		Authenticate	1681574376569	1681574381557	KO	status.find.is(200), but actually found 403
+ERROR	Calculate order details: Failed to build request: No attribute named 'courier' is defined 	1681574381575
+ERROR	Place order: Failed to build request: No attribute named 'order' is defined 	1681574381579
+USER	Authentication	END	1681574381582
