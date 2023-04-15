@@ -2,7 +2,9 @@ import io.gatling.javaapi.core.ScenarioBuilder;
 import io.gatling.javaapi.core.Simulation;
 import io.gatling.javaapi.http.HttpProtocolBuilder;
 
+import java.lang.reflect.Array;
 import java.time.Duration;
+import java.util.Arrays;
 import java.util.List;
 
 import static io.gatling.javaapi.core.CoreDsl.StringBody;
@@ -17,7 +19,7 @@ public class ShopSimulation extends Simulation {
     public ShopSimulation() {
 
         final var populationBuilder = authenticationScenario.injectOpen(
-                        constantUsersPerSec(10000).during(Duration.ofSeconds(1))
+                        constantUsersPerSec(100).during(Duration.ofSeconds(1))
                 )
                 .protocols(httpProtocol);
 
@@ -34,6 +36,9 @@ public class ShopSimulation extends Simulation {
 
     ScenarioBuilder authenticationScenario = scenario("Authentication")
             .feed(Utils.userFeeder)
+            .feed(Utils.productFeeder, 3)
+            .feed(Utils.courierFeeder)
+            .feed(Utils.regionFeeder)
             .exec(http("Authenticate")
                     .post("/v1/api/auth/authenticate")
                     .body(StringBody("""
@@ -53,12 +58,11 @@ public class ShopSimulation extends Simulation {
                             .header("Authorization", "Bearer #{token}")
                             .body(StringBody("""
                                     {
-                                        "courier":"%s",
-                                        "region":"%s",
-                                        "products":["%s", "%s", "%s"]
+                                        "courier":"#{courier}",
+                                        "region":"#{region}",
+                                        "products":["#{product(0)}", "#{product(1)}", "#{product(2)}"]
                                     }
-                                    """.formatted(Utils.courier(), Utils.region(), Utils.product(), Utils.product(),
-                                    Utils.product()))
+                                    """)
                             )
                             .asJson()
                             .ignoreProtocolChecks()
